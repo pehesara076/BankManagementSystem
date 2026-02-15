@@ -7,13 +7,14 @@ import java.util.*;
 import com.toedter.calendar.JDateChooser;
 
 public class SignupOne extends JFrame{
-  
+    long random;
+    JTextField nameTextField,fnameTextField,emailTextField,addressTextField,cityTextField,satateTextField,pinTextField;
     SignupOne(){
         setLayout(null);
         
         //generate random form number for a form
         Random ran = new Random();
-        long random = Math.abs((ran.nextLong()% 9000L)+1000L);
+        random = Math.abs((ran.nextLong()% 9000L)+1000L);
         
         //Form number
         JLabel formno = new JLabel("APPLICATION FORM NO." + random);
@@ -33,7 +34,7 @@ public class SignupOne extends JFrame{
         name.setBounds(100, 140, 100, 40);
         add(name);
         
-        JTextField nameTextField = new JTextField();
+        nameTextField = new JTextField();
         nameTextField.setFont(new Font("Raleway", Font.BOLD,14));
         nameTextField.setBounds(300, 140, 400,30);
         add(nameTextField);
@@ -44,7 +45,7 @@ public class SignupOne extends JFrame{
         fname.setBounds(100, 190, 200, 30);
         add(fname);
         
-        JTextField fnameTextField = new JTextField();
+        fnameTextField = new JTextField();
         fnameTextField.setFont(new Font("Raleway", Font.BOLD,14));
         fnameTextField.setBounds(300, 190, 400,30);
         add(fnameTextField);
@@ -87,7 +88,7 @@ public class SignupOne extends JFrame{
         email.setBounds(100, 340, 200, 30);
         add(email);
         
-        JTextField emailTextField = new JTextField();
+        emailTextField = new JTextField();
         emailTextField.setFont(new Font("Raleway", Font.BOLD,14));
         emailTextField.setBounds(300, 340, 400,30);
         add(emailTextField);
@@ -125,7 +126,7 @@ public class SignupOne extends JFrame{
         address.setBounds(100, 440, 200, 30);
         add(address);
         
-        JTextField addressTextField = new JTextField();
+        addressTextField = new JTextField();
         addressTextField.setFont(new Font("Raleway", Font.BOLD,14));
         addressTextField.setBounds(300, 440, 400,30);
         add(addressTextField);
@@ -136,7 +137,7 @@ public class SignupOne extends JFrame{
         city.setBounds(100, 490, 200, 30);
         add(city);
         
-        JTextField cityTextField = new JTextField();
+        cityTextField = new JTextField();
         cityTextField.setFont(new Font("Raleway", Font.BOLD,14));
         cityTextField.setBounds(300, 490, 400,30);
         add(cityTextField);
@@ -147,7 +148,7 @@ public class SignupOne extends JFrame{
         state.setBounds(100, 540, 200, 30);
         add(state);
         
-        JTextField satateTextField = new JTextField();
+        satateTextField = new JTextField();
         satateTextField.setFont(new Font("Raleway", Font.BOLD,14));
         satateTextField.setBounds(300, 540, 400,30);
         add(satateTextField);
@@ -158,7 +159,7 @@ public class SignupOne extends JFrame{
         pincode.setBounds(100, 590, 200, 30);
         add(pincode);
         
-        JTextField pinTextField = new JTextField();
+        pinTextField = new JTextField();
         pinTextField.setFont(new Font("Raleway", Font.BOLD,14));
         pinTextField.setBounds(300, 590, 400,30);
         add(pinTextField);
